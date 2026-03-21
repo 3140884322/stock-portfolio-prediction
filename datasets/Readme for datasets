@@ -31,6 +31,9 @@ dataset/
 
 Due to size limitations, the SP500 dataset is not included in this repository.
 
+This is the orginal github link, from the parent paper. 
+    https://github.com/SJTU-DMTai/StockMixer
+
 ## Description of Files
 
 - **eod_data.pkl**: End-of-day stock features used as model input  
