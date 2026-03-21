@@ -12,7 +12,7 @@ np.random.seed(123456789)
 torch.random.manual_seed(12345678)
 device = torch.device("cuda") if torch.cuda.is_available() else 'cpu'
 
-data_path = '../dataset'
+data_path = 'dataset'
 market_name = 'NASDAQ'
 relation_name = 'wikidata'
 stock_num = 1026
