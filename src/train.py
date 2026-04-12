@@ -84,7 +84,13 @@ def portfolio_backtest(pred, gt, mask, top_k=5):
         day_gt = gt[valid_idx, d]
 
         top_idx = np.argsort(day_pred)[-top_k:]   # top K predicted stocks
-        portfolio_ret = np.mean(day_gt[top_idx])  # equal-weight actual return
+        top_pred = day_pred[top_idx]
+        top_gt = day_gt[top_idx]
+
+        exp_scores = np.exp(top_pred - np.max(top_pred))
+        weights = exp_scores / np.sum(exp_scores)
+
+        portfolio_ret = np.sum(weights * top_gt)
         daily_returns.append(portfolio_ret)
 
     daily_returns = np.array(daily_returns)
