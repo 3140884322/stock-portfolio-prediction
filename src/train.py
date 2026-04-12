@@ -28,7 +28,7 @@ alpha = 0.1
 scale_factor = 3
 activation = 'GELU'
 
-dataset_path = '../dataset/' + market_name
+dataset_path = 'dataset/' + market_name
 if market_name == "SP500":
     data = np.load('../dataset/SP500/SP500.npy')
     data = data[:, 915:, :]
