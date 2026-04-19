@@ -35,12 +35,20 @@ This project extends the original StockMixer model by adding a portfolio constru
 
 3.Open Command Prompt in the project folder(unzip the file) you just download
 
-4.Create a folder called NASDAQ first in the dataset folder you download then
-https://github.com/SJTU-DMTai/StockMixer/tree/master/dataset/NASDAQ download the datasets from this website and place them in the NASDAQ folder 
-  The folder should contain 
-  eod_data.pkl
-  mask_data.pkl
-  gt_data.pkl
-  price_data.pkl
+4.Install the required packages by running:
+   py -m pip install numpy pandas tqdm torch
+
+5. Inside the project folder, create the following directory:
+   dataset/NASDAQ
+
+6. Download the NASDAQ dataset files from:
+   https://github.com/SJTU-DMTAI/StockMixer/tree/master/dataset/NASDAQ
+
+7. Place the following files into the `dataset/NASDAQ` folder:
+   - eod_data.pkl
+   - mask_data.pkl
+   - gt_data.pkl
+   - price_data.pkl
   
-5.run the code 
+8. Run the code from the project root directory using:
+   py src\train.py
