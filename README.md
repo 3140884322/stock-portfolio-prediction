@@ -43,4 +43,4 @@ https://github.com/SJTU-DMTai/StockMixer/tree/master/dataset/NASDAQ download the
   gt_data.pkl
   price_data.pkl
   
-5. run the code 
+5.run the code 
