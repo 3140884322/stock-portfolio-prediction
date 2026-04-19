@@ -28,6 +28,7 @@ Dataset is not included due to size. Please use the original StockMixer dataset 
 This project extends the original StockMixer model by adding a portfolio construction and evaluation module based on predicted returns.
 
 ##Steps to Run
+
 1.Download the zip file from my github
 
 2.download python 3.11
