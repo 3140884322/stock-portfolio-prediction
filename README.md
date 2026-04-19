@@ -26,3 +26,17 @@ Dataset is not included due to size. Please use the original StockMixer dataset 
 
 ## Contribution
 This project extends the original StockMixer model by adding a portfolio construction and evaluation module based on predicted returns.
+
+##Steps to Run
+1.Download the zip file from my github
+2.download python 3.11
+3.Open Command Prompt in the project folder(unzip the file) you just download
+4.https://github.com/SJTU-DMTai/StockMixer/tree/master/dataset/NASDAQ download the datasets from this website and place them in the dataset folder
+  The folder should contain 
+  eod_data.pkl
+  mask_data.pkl
+  gt_data.pkl
+  price_data.pkl
+5.cd src
+   python train.py
+   This line of code will run the file.
